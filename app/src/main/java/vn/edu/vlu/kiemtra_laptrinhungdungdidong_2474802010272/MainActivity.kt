@@ -1,5 +1,6 @@
 package vn.edu.vlu.kiemtra_laptrinhungdungdidong_2474802010272
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Button
@@ -34,6 +35,10 @@ class MainActivity : AppCompatActivity() {
             // 3. Dữ liệu hoàn toàn hợp lệ
             else {
                 tvStatus.text = "Validation Successful!"
+
+                //CHUYỂN SANG SECOND ACTIVITY BẰNG INTENT
+                val intent = Intent(this, SecondActivity::class.java)
+                startActivity(intent)
             }
         }
     }

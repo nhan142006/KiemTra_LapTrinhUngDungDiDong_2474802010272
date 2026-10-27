@@ -26,3 +26,11 @@ Empty or Invalid Input Error:
 ![img.png](img.png)
 Successful Login Validated:
 ![img_1.png](img_1.png)
+
+QUESTION 2: Activity Navigation using Intent
+1. Implemented Technical Requirements:
+Created SecondActivity with a responsive ConstraintLayout interface.
+Implemented explicit Intent in MainActivity to navigate to SecondActivity upon successful login validation.
+2. Evidence Screenshots:
+Navigation to SecondActivity:
+![img_2.png](img_2.png)
