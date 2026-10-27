@@ -34,3 +34,6 @@ Implemented explicit Intent in MainActivity to navigate to SecondActivity upon s
 2. Evidence Screenshots:
 Navigation to SecondActivity:
 ![Second Activity Success](screenshots/cau2_success.png)
+QUESTION 3: Dynamic list display with ListView and Adapter
+![ListView Display](screenshots/cau3_listview_display.png)
+![Item Click Toast](screenshots/cau3_item_click_toast.png)
