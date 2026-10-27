@@ -1,12 +1,12 @@
 package vn.edu.vlu.kiemtra_laptrinhungdungdidong_2474802010272
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import vn.edu.vlu.kiemtra_laptrinhungdungdidong_2474802010272.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,9 +31,13 @@ class MainActivity : AppCompatActivity() {
             else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches() || password.length < 6) {
                 tvStatus.text = "Invalid email format or Password < 6 characters!"
             }
-            // 3. Dữ liệu hoàn toàn hợp lệ
+            // 3. Dữ liệu hoàn toàn hợp lệ -> Chuyển màn hình và truyền email qua Intent (Câu 2)
             else {
                 tvStatus.text = "Validation Successful!"
+
+                val intent = Intent(this, SecondActivity::class.java)
+                intent.putExtra("USER_EMAIL", email)
+                startActivity(intent)
             }
         }
     }
